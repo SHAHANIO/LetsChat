@@ -1,0 +1,125 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5;
+}
+
+.login-container, .chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-container input, .login-container button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.login-container button {
+    background-color: #009688;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-container button:hover {
+    background-color: #00796b;
+}
+
+.chat-container {
+    width: 400px;
+    height: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.chat-box {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.chat-message {
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    max-width: 70%;
+    word-wrap: break-word;
+    display: flex;
+    align-items: center;
+}
+
+.chat-message.sent {
+    align-self: flex-end;
+    background-color: #dcf8c6;
+    color: #000;
+}
+
+.chat-message.received {
+    align-self: flex-start;
+    background-color: #ececec;
+    color: #000;
+}
+
+.chat-message img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.chat-message .profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.chat-input {
+    display: flex;
+    border-top: 1px solid #e0e0e0;
+}
+
+#message-input {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+#image-input {
+    display: none;
+}
+
+#send-button {
+    padding: 15px;
+    border: none;
+    background-color: #009688;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+#send-button:hover {
+    background-color: #00796b;
+}
